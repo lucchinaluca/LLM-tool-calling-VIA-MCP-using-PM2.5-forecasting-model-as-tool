@@ -2,3 +2,10 @@
 analysis of data/
 classified_datasets/
 classified_datasets/traffic/anpr_excel/excel/
+/__pycache__
+.cache.sqlite
+/online_data
+/cache
+/processed_data_pkl
+/maps
+CHANGES.md
