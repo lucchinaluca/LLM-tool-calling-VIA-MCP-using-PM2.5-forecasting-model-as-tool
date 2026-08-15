@@ -1,6 +1,9 @@
+import os
+os.environ["MCP_USE_ANONYMIZED_TELEMETRY"] = "false"
+os.environ["DEBUG"] = "0"
 import requests
 from datetime import datetime, timezone
-from mcp_use.server import FastMCP
+from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("bath-pollution-mcp")
 
@@ -34,4 +37,4 @@ def get_pollution_bath() -> dict:
     }
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="stdio")

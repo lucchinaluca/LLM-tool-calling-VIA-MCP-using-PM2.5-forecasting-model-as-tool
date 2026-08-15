@@ -1,7 +1,10 @@
 
 # weather_mcp.py
+import os
+os.environ["MCP_USE_ANONYMIZED_TELEMETRY"] = "false"
+os.environ["DEBUG"] = "0"
 from datetime import datetime, timezone
-from mcp_use.server import FastMCP
+from mcp.server.fastmcp import FastMCP
 import openmeteo_requests
 import pandas as pd
 import requests_cache
@@ -63,4 +66,4 @@ def get_weather_bath() -> dict:
     }
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="stdio")
