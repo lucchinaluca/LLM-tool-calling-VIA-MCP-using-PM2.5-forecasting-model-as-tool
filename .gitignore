@@ -18,3 +18,6 @@ introduction draft 1.pdf
 links.docx
 methodology chapter.docx
 project proposal Luca Lucchina.docx
+models_saved/4.1base_lstm.pkl
+models_saved/4.2darts_transformer.pkl
+models_saved/4.3darts_transformer_optimized.pkl
